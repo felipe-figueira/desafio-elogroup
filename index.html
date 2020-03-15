@@ -11,7 +11,8 @@
 <body>
 
     <div class="content">
-        <form name="cadastro" class="form">
+        <form name="cadastro" class="form" onsubmit="return a()" action="http://localhost:8080" method="POST"
+            target="_blank">
             <h1>Cadastro</h1>
             <div class="campo">
                 <label>Nome:</label>
@@ -49,12 +50,16 @@
                 <label for="instagram">Instagram</label>
                 <input id="instagram" type="checkbox" name="instagram" value="Instagram" disabled="disabled" />
             </div>
-            <input id="bot" class="botao" id="btn-enviar" type="submit" value="enviar">
+            <input id="bot" class="botao" id="btn-enviar"  onclick="a(), b()" type="submit" value="enviar">
         </form>
     </div>
     <footer>
         <h3>Desenvolvido por Felipe Figueira</h3>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="validacao.js"></script>
+
 </body>
 
 </html>
