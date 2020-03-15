@@ -1,9 +1,9 @@
-function a() {
+function validarNome() {
     if (document.getElementById("name").validity.patternMismatch) {
         alert("Por favor, digite pelo menos um sobrenome");
     }
 }
-function b() {
+function validarTelefone() {
     if (document.getElementById("tel").validity.patternMismatch) {
         alert("Por favor, digite o telefone nesse formato: 99-99999999");
     }
