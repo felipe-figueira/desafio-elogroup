@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio elogroup</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <form name="cadastro" class="form">
+            <h1>Cadastro</h1>
+            <div class="campo">
+                <label>Nome:</label>
+                <input id="name" type="text" name="name" required placeholder="Digite seu nome e sobrenome"
+                    pattern="^[A-z]{1,15} [A-z]{1,15} ?[A-z]{0,} ?[A-z]{0,} ?[A-z]{0,}$">
+            </div>
+
+            <div class="campo">
+                <label>Telefone:</label>
+                <input id="tel" name="telefone" maxlength="11" placeholder="99-99999999" pattern="^\d{2}-\d{8}$" />
+            </div>
+
+            <div class="campo">
+                <label>Como nos conheceu:</label>
+                <select name="conheceu">
+                    <option value="Tv">Tv</option>
+                    <option value="Internet">Internet</option>
+                    <option value="outros">outros</option>
+                </select>
+            </div>
+            <hr>
+            <div class="campo">
+                <label>Possui rede social?</label>
+                <input id="outros" type="radio" value="1" name="campo-radio" id="campo-radio1" onchange="habilitar()" />
+                <label for="campo-radio1">Sim</label>
+                <input type="radio" value="0" name="campo-radio" id="campo-radio2" onchange="desabilitar()" />
+                <label for="campo-radio2">Não</label>
+            </div>
+            <div id="1" class="campo">
+                <label>Quais: </label><br>
+                <label for="facebook">facebook</label>
+                <input id="facebook" name="facebook" class="facebook" type="checkbox" value="facebook" disabled="disabled" />
+                <label for="linkedin">LinkedIn </label>
+                <input id="linkedin" type="checkbox" name="linkedin" value="LinkedIn" disabled="disabled" />
+                <label for="instagram">Instagram</label>
+                <input id="instagram" type="checkbox" name="instagram" value="Instagram" disabled="disabled" />
+            </div>
+            <input id="bot" class="botao" id="btn-enviar" type="submit" value="enviar">
+        </form>
+    </div>
+    <footer>
+        <h3>Desenvolvido por Felipe Figueira</h3>
+    </footer>
+</body>
+
+</html>
