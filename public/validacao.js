@@ -1,5 +1,5 @@
 function validarNome() {
-    if (document.getElementById("name").validity.patternMismatch) {
+    if (document.getElementById("nome").validity.patternMismatch) {
         alert("Por favor, digite pelo menos um sobrenome");
     }
 }
