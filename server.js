@@ -3,10 +3,11 @@ const bodyParser = require('body-parser')
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static('app'))
+app.use(express.static('views'))
+app.use(express.static('public'));
 app.use(bodyParser.json())
 app.use(bodyParser.text())
- 
+
 app.get('/', (req, res) => {
     res.render("index.html")
 })
