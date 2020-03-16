@@ -5,13 +5,10 @@
  -Frameworks utilizados: Node, Jquery, express. Código feito no vscode.
  
  # hirarquia
-app	
+app	->
   -index.css	
   -index.html
   -validacao.js
-package-lock.json	
-package.json	
-server.js
 
 # nome utilizado na plataforma Gupy
 Felipe Figueira
