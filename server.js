@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static('.'))
+app.use(express.static('app'))
 app.use(bodyParser.json())
 app.use(bodyParser.text())
  
