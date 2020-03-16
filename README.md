@@ -22,5 +22,6 @@ package.json	->
 
 server.js-> 
 
+Arquivo html na pasta views e arquivos css da pagina e validações javascript na pasta public.
 # nome utilizado na plataforma Gupy
 Felipe Figueira
