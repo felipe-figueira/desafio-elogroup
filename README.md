@@ -12,7 +12,15 @@ public->
   
  views-> 
  
-   -index.html
+   -index.html 
+  
+README.md	-> 
+
+package-lock.json -> 
+
+package.json	-> 
+
+server.js-> 
 
 # nome utilizado na plataforma Gupy
 Felipe Figueira
