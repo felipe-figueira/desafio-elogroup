@@ -9,6 +9,7 @@ function validarTelefone() {
     }
 }
 
+// desabilitar/habilitar envio das redes sociais
 function habilitar() {
     if(document.getElementById('facebook').disabled==true){
         document.getElementById('facebook').disabled=false
@@ -33,4 +34,15 @@ function desabilitar() {
     }
 }
 
+//Formato do telefone 
 $("#tel").mask("00-00000000");
+
+//desabilitar botão enviar após envio
+var formID = document.getElementById("formID");
+var send = $("#button");
+
+$(formID).submit(function(event){
+  if (formID.checkValidity()) {
+    send.attr('disabled', 'disabled');
+  }
+});

@@ -11,7 +11,7 @@
 <body>
 
     <div class="content">
-        <form name="cadastro" class="form" onsubmit="return a()" action="http://localhost:8080" method="POST"
+        <form id="formID" name="cadastro" class="form" onsubmit="return a()" action="http://localhost:8080" method="POST"
             target="_blank">
             <h1>Cadastro</h1>
             <div class="campo">
@@ -50,7 +50,7 @@
                 <label for="instagram">Instagram</label>
                 <input id="instagram" type="checkbox" name="instagram" value="Instagram" disabled="disabled" />
             </div>
-            <input id="bot" class="botao" id="btn-enviar"  onclick="validarNome(), validarTelefone()" type="submit" value="enviar">
+            <input id="button" class="botao" id="btn-enviar"  onclick="validarNome(), validarTelefone()" type="submit" value="enviar" >
         </form>
     </div>
     <footer>
@@ -58,7 +58,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
-    <script src="validacao.js"></script>
+    <script src="backend/validacao.js"></script>
 
 </body>
 
