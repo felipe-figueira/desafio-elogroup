@@ -13,15 +13,15 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    const name = req.body.name;
+    const nome = req.body.nome;
     const telefone = req.body.telefone;
-    const conheceu = req.body.conheceu;
+    const comoConheceu = req.body.comoConheceu;
     const redeSocial = [req.body.facebook, req.body.linkedin, req.body.instagram]
     
     res.json({ 
-        name,
+        nome,
         telefone,
-        conheceu,
+        comoConheceu,
         redeSocial
         })
 })
